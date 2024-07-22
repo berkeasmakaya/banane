@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "588254625108",
+    "project_id": "patika-banane",
+    "storage_bucket": "patika-banane.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:588254625108:android:05a4c38e2482fed3729cc1",
+        "android_client_info": {
+          "package_name": "com.banane"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAccF_ZN2LUux5kVFVShHysAI03JeQ6Oe4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
