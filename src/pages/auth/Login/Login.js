@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Text, View } from "react-native";
+import { Text, ScrollView } from "react-native";
 import styles from './Login.style';
 import Input from '../../../components/Input/Input';
 import Button from '../../../components/Button/Button';
@@ -39,7 +39,7 @@ function Login({navigation}){
     }
     
     return(
-        <View style={styles.container}>
+        <ScrollView style={styles.container}>
             <Text style={styles.header}>banane?</Text>
             <Formik initialValues={initalFormValues} onSubmit={handleFormSubmit}>
                 {({values, handleChange, handleSubmit}) => (
@@ -60,7 +60,7 @@ function Login({navigation}){
                 )}         
             </Formik>
             <Button text="Kayıt Ol" theme="secondary" onPress={handleSignUp}/>
-        </View>
+        </ScrollView>
     )
 }
 

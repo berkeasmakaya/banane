@@ -1,5 +1,5 @@
 import React, {useState}from "react";
-import { Text, View} from "react-native";
+import { Text, View, ScrollView} from "react-native";
 import styles from './Sign.style';
 import Input from '../../../components/Input/Input';
 import Button from '../../../components/Button/Button';
@@ -52,7 +52,7 @@ function Sign({navigation}){
     }
 
     return(
-        <View style={styles.container}>
+        <ScrollView style={styles.container}>
             <Text style={styles.header}>banane?</Text>
             <Formik initialValues={initalFormValues} onSubmit={handleFormSubmit}>
             {({values, handleChange, handleSubmit}) => (
@@ -79,7 +79,7 @@ function Sign({navigation}){
             )}
             </Formik>
             <Button text="Geri" theme="secondary" onPress={handleLogin} />
-        </View>
+        </ScrollView>
     )
 }
 
